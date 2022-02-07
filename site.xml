@@ -1,0 +1,7 @@
+---
+- name: Building Shark Web
+  hosts: shark_server
+  become: true
+
+  roles:
+   - codeigniter
