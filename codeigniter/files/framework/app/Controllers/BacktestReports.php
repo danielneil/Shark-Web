@@ -6,6 +6,8 @@ class BacktestReports extends BaseController
 {
 	public function index()
 	{
-		return view('backtestreports');
+		echo view('header');
+		echo view('BacktestReports');
+		echo view('footer');
 	}
 }
