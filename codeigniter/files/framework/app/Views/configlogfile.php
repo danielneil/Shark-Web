@@ -217,19 +217,19 @@
 	<p>Shark's current configuration comprises of:</p>
 
 <pre><code>
-# Instruments 
+<h4>Instruments</h4>
 Instruments: 			20 
 Plugins: 			3
 Brokers: 			0
 
-# Shark Git Repositories
+<h4>Shark Git Repositories</h4>
 Shark Config Git REPO:		https://github.com/danielneil/Shark-Config.git
 Shark Plugin Git REPO:		https://github.com/danielneil/Shark-Config.git
 Shark Web Git REPO: 		https://github.com/danielneil/Shark-Config.git
 Shark Brokers Git REPO:		https://github.com/danielneil/Shark-Config.git
 
-# Trading Configuration file
-<a href ="http://<?php echo $_SERVER['SERVER_ADDR'];?>/shark-web/Shark-Config/config/files/trading-config.yml">trading-config.yml</a>
+<h4>Configuration Files</h4>
+Trading Configuration File: <a href ="http://<?php echo $_SERVER['SERVER_ADDR'];?>/shark-web/Shark-Config/config/files/trading-config.yml">trading-config.yml</a>
 </code></pre>
 
 </section>
