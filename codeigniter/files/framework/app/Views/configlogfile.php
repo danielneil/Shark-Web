@@ -229,7 +229,7 @@ Shark Web Git REPO: 		https://github.com/danielneil/Shark-Config.git
 Shark Brokers Git REPO:		https://github.com/danielneil/Shark-Config.git
 
 # Trading Configuration file
-<a href ="http://172.105.187.181/shark-web/Shark-Config/config/files/trading-config.yml">trading-config.yml</a>
+<a href ="http://<?php echo $_SERVER['SERVER_ADDR'];?>/shark-web/Shark-Config/config/files/trading-config.yml">trading-config.yml</a>
 </code></pre>
 
 </section>
