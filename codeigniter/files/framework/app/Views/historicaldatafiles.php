@@ -19,7 +19,9 @@
 
 	$history_dir = '/shark/historical/yahoo_finance_data';
 
-	if ( echo sizeof($history_dir) != 0) {
+        $files = scandir($history_dir);
+
+        if ( count($files)-2) {
 
 		foreach (scandir($history_dir) as $f)
 		{
