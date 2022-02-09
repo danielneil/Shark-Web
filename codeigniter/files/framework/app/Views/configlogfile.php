@@ -211,16 +211,13 @@
 <!-- CONTENT -->
 
 <section>
-
 <pre>
-	<code>
-		<?php
-			echo file_get_contents("/shark/log/config_gen.log");
-		?>
-	</code>
+<code>
+<?php
+echo file_get_contents("/shark/log/config_gen.log");
+?>
+</code>
 </pre>
-
-
 </section>
 
 <footer>
