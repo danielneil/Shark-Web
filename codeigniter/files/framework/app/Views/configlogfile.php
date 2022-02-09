@@ -36,7 +36,7 @@ Shark Brokers Git REPO:		<?php echo exec("cd /shark/Shark-Brokers && git config 
 Trading Configuration File: 	<a href ="http://<?php echo $_SERVER['SERVER_ADDR'];?>/shark-web/Shark-Config/config/files/trading-config.yml">trading-config.yml</a>
 
 <h4>Historical Data</h4>
-Number of data files:		<?php echo exec("find /shark/historical/yahoo_finance_data/ |  wc -l") . PHP_EOL; ?> 
+Number of data files:		<?php echo exec("find /shark/historical/yahoo_finance_data/ -type f | wc -l") . PHP_EOL; ?> 
 </code></pre>
 
 </section>
@@ -46,12 +46,6 @@ Number of data files:		<?php echo exec("find /shark/historical/yahoo_finance_dat
 <section>
 
 <h1>Configuration File Parser Log</h1>
-	
-<?php 
-
-echo exec("yamllint /shark/Shark-Config/config/files/trading-config.yml") . PHP_EOL; 
-
-?>
 	
 <?php
 echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log")));
