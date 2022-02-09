@@ -12,6 +12,8 @@
 <section>
 
 <h1>Index of historical data file cache</h1>
+
+<p>Files will appear here as they are cached by the yahoo_finance plugin.</p>
 	
 <pre><code>
 
