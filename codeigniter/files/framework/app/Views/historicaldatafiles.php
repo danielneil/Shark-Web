@@ -19,17 +19,22 @@
 
 	$history_dir = '/shark/historical/yahoo_finance_data';
 
-    	foreach (scandir($history_dir) as $f)
-	{
-		$fileName = $history_dir . '/'. $f;
-		$lastModified = date ("F d Y H:i:s.", filemtime($fileName));
+	if ( echo sizeof($history_dir) != 0) {
 
-      		if ($f !== '.' and $f !== '..')
+		foreach (scandir($history_dir) as $f)
 		{
-			echo "<a href=/shark-web/historical/yahoo_finance_data/" . $f . ">" . $f . "</a>" . "\t" . filesize($fileName) . ' bytes ' . "\t" . $lastModified  . PHP_EOL ;
-      		}
-    	}
+			$fileName = $history_dir . '/'. $f;
+			$lastModified = date ("F d Y H:i:s.", filemtime($fileName));
 
+			if ($f !== '.' and $f !== '..')
+			{
+				echo "<a href=/shark-web/historical/yahoo_finance_data/" . $f . ">" . $f . "</a>" . "\t" . filesize($fileName) . ' bytes ' . "\t" . $lastModified  . PHP_EOL ;
+			}
+		}
+	}
+	else {
+		echo "No historical data files found...";	
+	}
 ?> 
 
 </code></pre>
