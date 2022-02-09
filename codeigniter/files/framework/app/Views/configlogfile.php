@@ -202,7 +202,7 @@
 
 		<h1>Running Configuration</h1>
 
-		<h2>Current Running Config as per the last build</h2>
+		<h2>Shark's Current Configuration as per the last build - Feb 09 16:53:45</h2>
 
 	</div>
 
@@ -218,11 +218,11 @@
 
 <pre><code>
 <h4>Instruments</h4>
-Instruments: 			20 
-Plugins: 			3
-Brokers: 			0
+Trading Instruments: 		20 
+Shark Plugins: 			3
+Trading Brokers: 		0
 
-<h4>Shark Git Repositories</h4>
+<h4>Git Configuration Repositories</h4>
 Shark Config Git REPO:		https://github.com/danielneil/Shark-Config.git
 Shark Plugin Git REPO:		https://github.com/danielneil/Shark-Config.git
 Shark Web Git REPO: 		https://github.com/danielneil/Shark-Config.git
@@ -238,7 +238,7 @@ Trading Configuration File: <a href ="http://<?php echo $_SERVER['SERVER_ADDR'];
 	
 <section>
 
-<h1>Configuration Parser Log</h1>	
+<h1>Configuration File Parser Log</h1>	
 	
 <?php
 echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log")));
@@ -253,7 +253,7 @@ echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log")));
 
 	<div class="copyrights">
 
-		<p>&copy; <?= date('Y') ?> CodeIgniter Foundation. CodeIgniter is open source project released under the MIT open source licence.</p>
+		<p>&copy; <?= date('Y') ?> Shark - An Algorithmic Trading Platform. Shark is an open source project released under the GPL-3.0 License.</p>
 
 	</div>
 
