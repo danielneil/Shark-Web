@@ -197,9 +197,9 @@
 
 	<div class="heroe">
 
-		<h1>Configuration Logfile</h1>
+		<h1>Configuration</h1>
 
-		<h2>Configuration items per the last build</h2>
+		<h2>Shark Config as per the last build</h2>
 
 	</div>
 
