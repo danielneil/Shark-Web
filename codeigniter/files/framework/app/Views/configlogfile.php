@@ -241,7 +241,11 @@ Trading Configuration File: <a href ="http://<?php echo $_SERVER['SERVER_ADDR'];
 
 <h1>Configuration File Parser Log</h1>
 	
-<?php echo exec("yamllint  /shark/Shark-Config/config/files/trading-config.yml") . PHP_EOL; ?>
+<?php 
+
+echo exec("yamllint /shark/Shark-Config/config/files/trading-config.yml") . PHP_EOL; 
+
+?>
 	
 <?php
 echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log")));
