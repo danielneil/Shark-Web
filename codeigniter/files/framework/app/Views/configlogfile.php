@@ -33,7 +33,10 @@ Shark Web Git REPO: 		<?php echo exec("cd /shark/Shark-Web && git config --get r
 Shark Brokers Git REPO:		<?php echo exec("cd /shark/Shark-Brokers && git config --get remote.origin.url") . PHP_EOL; ?> 
 
 <h4>Configuration Files</h4>
-Trading Configuration File: <a href ="http://<?php echo $_SERVER['SERVER_ADDR'];?>/shark-web/Shark-Config/config/files/trading-config.yml">trading-config.yml</a>
+Trading Configuration File: 	<a href ="http://<?php echo $_SERVER['SERVER_ADDR'];?>/shark-web/Shark-Config/config/files/trading-config.yml">trading-config.yml</a>
+
+<h4>Historical Data</h4>
+Historical data files (count)	:<?php echo exec("find /shark/historical/yahoo_finance_data/ |  wc -l") . PHP_EOL; ?> 
 </code></pre>
 
 </section>
