@@ -212,8 +212,8 @@
 
 <section>
 
-	<h1>Quick View</h1>
-
+	<h1>Overview</h1>
+	
 	<p>Shark's current configuration comprises of:</p>
 
 <pre><code>
@@ -227,6 +227,9 @@ Shark Config Git REPO:		https://github.com/danielneil/Shark-Config.git
 Shark Plugin Git REPO:		https://github.com/danielneil/Shark-Config.git
 Shark Web Git REPO: 		https://github.com/danielneil/Shark-Config.git
 Shark Brokers Git REPO:		https://github.com/danielneil/Shark-Config.git
+
+# Trading Configuration file
+<a href ="http://localhost/shark-web/Shark-Config/config/files/trading-config.yml">trading-config.yml</a>
 </code></pre>
 
 </section>
