@@ -218,9 +218,9 @@
 
 <pre><code>
 # Instruments 
-Instruments: 		20 
-Plugins: 		3
-Brokers: 		0
+Instruments: 			20 
+Plugins: 			3
+Brokers: 			0
 
 # Shark Git Repositories
 Shark Configuration Git REPO:	https://github.com/danielneil/Shark-Config.git
@@ -237,7 +237,7 @@ Shark Brokers Git REPO:		https://github.com/danielneil/Shark-Config.git
 
 		<h1>Configuration Log File</h1>
 <?php
-echo file_get_contents("/shark/log/config_gen.log");
+echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log"));
 ?>
 	</section>
 
