@@ -232,11 +232,11 @@ Shark Brokers Git REPO:		https://github.com/danielneil/Shark-Config.git
 </section>
 
 <div class="further">
-
-	<h1>Configuration Parser Log</h1>
 	
 <section>
 
+<h1>Configuration Parser Log</h1>	
+	
 <?php
 echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log")));
 ?>
