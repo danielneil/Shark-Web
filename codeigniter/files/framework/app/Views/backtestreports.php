@@ -36,22 +36,22 @@ Total trades    	Wins    		Losses
 <pre><code>
 <div style='font-weight: bold'>Additional Portfolio Information</div>
 LAvg. profit	LProfits std. dev.	LMax. profit	LMin. profit
-$97	$339	$1042	$-146
+$97		$339			$1042		$-146
 
 LAvg. return	LReturns std. dev.	LMax. return	LMin. return
-76	214 %	681 %	-9 %
+76		214 %			681 %		-9 %
 
 Avg. profit	Profits std. dev.	Max. profit	Min. profit
-$384	$466	$1042	$31
+$384		$466			$1042		$31
 
 Avg. return	Returns std. dev.	Max. return	Min. return
-239 %	313 %	681 %	6 %
+239 %		313 %			681 %		6 %
 
 Avg. loss	Losses std. dev.	Max. loss	Min. loss
-$-46	$49	$-146	$-6
+$-46		$49			$-146		$-6
 
 Avg. return	Returns std. dev.	Max. return	Min. return
--5 %	3 %	-1 %	-9 %
+-5 %		3 %			-1 %		-9 %
 
 </code></pre>
 </section>
