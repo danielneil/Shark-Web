@@ -202,7 +202,7 @@
 
 		<h1>Running Configuration</h1>
 
-		<h2>Shark's Current Configuration as per the last build - Feb 09 16:53:45</h2>
+		<h2>Shark's Current Configuration as per the last build: <?php echo date("F d Y H:i:s.", filemtime("/shark/log/config_gen.log")); ?></h2>
 
 	</div>
 
