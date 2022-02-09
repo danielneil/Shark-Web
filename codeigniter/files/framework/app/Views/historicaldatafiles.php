@@ -25,7 +25,7 @@
 
         if ( count($files)-2) {
 
-		echo "<div style="font-weight: bold">Creation Date\t\t\tSize\t\tFile Name</div>" . PHP_EOL ;
+		echo "<div style='font-weight: bold'>Creation Date\t\t\tSize\t\tFile Name</div>" . PHP_EOL ;
 		foreach (scandir($history_dir) as $f)
 		{
 			$fileName = $history_dir . '/'. $f;
