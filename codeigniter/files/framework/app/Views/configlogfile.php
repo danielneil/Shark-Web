@@ -197,9 +197,9 @@
 
 	<div class="heroe">
 
-		<h1>Configuration</h1>
+		<h1>Shark Configuration</h1>
 
-		<h2>Shark Config as per the last build</h2>
+		<h2>Current running Configuration</h2>
 
 	</div>
 
@@ -208,6 +208,22 @@
 <!-- CONTENT -->
 
 <section>
+	
+	
+	<h1>About this page</h1>
+
+	<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+
+	<p>If you would like to edit this page you will find it located at:</p>
+
+	<pre><code>app/Views/welcome_message.php</code></pre>
+
+	<p>The corresponding controller for this page can be found at:</p>
+
+	<pre><code>app/Controllers/Home.php</code></pre>
+	
+	
+	
 <pre>
 <code>
 <?php
@@ -216,17 +232,6 @@ echo file_get_contents("/shark/log/config_gen.log");
 </code>
 </pre>
 </section>
-
-<footer>
-	<div class="environment">
-
-		<p>Page rendered in {elapsed_time} seconds</p>
-
-		<p>Environment: <?= ENVIRONMENT ?></p>
-
-	</div>
-
-</footer>
 
 </body>
 </html>
