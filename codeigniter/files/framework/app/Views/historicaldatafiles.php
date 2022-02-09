@@ -25,10 +25,11 @@
 
         if ( count($files)-2) {
 
+		echo "Creation Date\tSize\tFile Name" . PHP_EOL ;
 		foreach (scandir($history_dir) as $f)
 		{
 			$fileName = $history_dir . '/'. $f;
-			$lastModified = date ("F d Y H:i:s.", filemtime($fileName));
+			$lastModified = date ("F d Y H:i:s", filemtime($fileName));
 
 			if ($f !== '.' and $f !== '..')
 			{
