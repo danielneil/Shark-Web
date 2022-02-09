@@ -202,8 +202,7 @@
 
 		<h1>Running Configuration</h1>
 
-		<h2>Shark's Current Configuration as per the last build: <?php echo date("F d Y H:i:s.", filemtime("/shark/log/config_gen.log")); ?></h2>
-
+		<h2>Shark's Current Configuration as per the last build on <?php echo date("F d Y H:i:s.", filemtime("/shark/log/config_gen.log")); ?></h2>
 	</div>
 
 </header>
@@ -223,10 +222,10 @@ Shark Plugins: 			3
 Trading Brokers: 		0
 
 <h4>Git Configuration Repositories</h4>
-Shark Config Git REPO:		https://github.com/danielneil/Shark-Config.git
-Shark Plugin Git REPO:		https://github.com/danielneil/Shark-Config.git
-Shark Web Git REPO: 		https://github.com/danielneil/Shark-Config.git
-Shark Brokers Git REPO:		https://github.com/danielneil/Shark-Config.git
+Shark Config Git REPO:		<?php echo exec("cd /shark/Shark-Config && git config --get remote.origin.url"); ?>
+Shark Plugin Git REPO:		<?php echo exec("cd /shark/Shark-Plugins && git config --get remote.origin.url"); ?>
+Shark Web Git REPO: 		<?php echo exec("cd /shark/Shark-Web && git config --get remote.origin.url"); ?>
+Shark Brokers Git REPO:		<?php echo exec("cd /shark/Shark-Brokers && git config --get remote.origin.url"); ?>
 
 <h4>Configuration Files</h4>
 Trading Configuration File: <a href ="http://<?php echo $_SERVER['SERVER_ADDR'];?>/shark-web/Shark-Config/config/files/trading-config.yml">trading-config.yml</a>
