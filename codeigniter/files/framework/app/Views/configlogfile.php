@@ -47,12 +47,6 @@ Number of data files:		<?php echo exec("find /shark/historical/yahoo_finance_dat
 
 <h1>Configuration File Parser Log</h1>
 	
-<?php 
-
-echo exec("yamllint /shark/Shark-Config/config/files/trading-config.yml") . PHP_EOL; 
-
-?>
-	
 <?php
 echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log")));
 ?>
