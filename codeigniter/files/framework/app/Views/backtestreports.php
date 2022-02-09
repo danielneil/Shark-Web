@@ -14,9 +14,9 @@
 
 <section>
 
-	<h1>Report Overview</h1>
+	<h1>Portfolio (Single Instrument - ADA-USD)</h1>
 	
-	<p>This report comprises of the results of a backtest ran against instrument ADA-USD:</p>
+	<p>This report comprises of the results of a backtest ran against a single instrument, ADA-USD:</p>
 
 
 <pre><code>
