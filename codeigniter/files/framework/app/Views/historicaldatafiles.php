@@ -15,7 +15,22 @@
 	
 <pre><code>
 
-<?php echo exec("find /shark/historical/ -type f") . PHP_EOL; ?> 
+<?php 
+
+	$history_dir = '/shark/historical/yahoo_finance_data';
+
+    	foreach (scandir($history_dir) as $f)
+	{
+		$fileName = $history_dir . '/'. $f;
+		$lastModified = date ("F d Y H:i:s.", filemtime($fileName));
+
+      		if ($f !== '.' and $f !== '..')
+		{
+			echo "<a href=/shark-web/historical/yahoo_finance_data/" . $f . ">" . $f . "</a>" . "\t" . filesize($fileName) . ' bytes ' . "\t" . $lastModified  . PHP_EOL ;
+      		}
+    	}
+
+?> 
 
 </code></pre>
 	
