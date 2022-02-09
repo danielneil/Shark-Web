@@ -6,6 +6,7 @@ class ConfigLogfile extends BaseController
 {
 	public function index()
 	{
-		return view('configlogfile');
+		echo view('configlogfile');
+		echo view('footer');
 	}
 }
