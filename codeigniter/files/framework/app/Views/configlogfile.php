@@ -200,7 +200,7 @@
 
 	<div class="heroe">
 
-		<h1>Shark Configuration</h1>
+		<h1>Running Configuration</h1>
 
 		<h2>Current Running Config as per the last build</h2>
 
@@ -223,7 +223,7 @@ Plugins: 			3
 Brokers: 			0
 
 # Shark Git Repositories
-Shark Configuration Git REPO:	https://github.com/danielneil/Shark-Config.git
+Shark Config Git REPO:		https://github.com/danielneil/Shark-Config.git
 Shark Plugin Git REPO:		https://github.com/danielneil/Shark-Config.git
 Shark Web Git REPO: 		https://github.com/danielneil/Shark-Config.git
 Shark Brokers Git REPO:		https://github.com/danielneil/Shark-Config.git
