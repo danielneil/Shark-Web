@@ -25,7 +25,7 @@
 
         if ( count($files)-2) {
 
-		echo "Creation Date\tSize\tFile Name" . PHP_EOL ;
+		echo "Creation Date\t\t\tSize\tFile Name" . PHP_EOL ;
 		foreach (scandir($history_dir) as $f)
 		{
 			$fileName = $history_dir . '/'. $f;
