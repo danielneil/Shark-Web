@@ -217,7 +217,7 @@
 
 <pre><code>
 <h4>Instruments</h4>		
-Trading Instruments: 		<?php echo exec("grep -o -i 'Created instrument' /shark/log/config_gen.log | wc -l") . PHP_EOL; ?> 
+Trading Instruments: 		<?php echo exec("grep -o -i 'Created instrument:' /shark/log/config_gen.log | wc -l") . PHP_EOL; ?> 
 Trading Groups:			<?php echo exec("grep -o -i 'instrument group' /shark/log/config_gen.log | wc -l") . PHP_EOL; ?> 
 Shark Plugins: 			<?php echo exec("grep -i 'Attached plugin' /shark/log/config_gen.log | awk '{ print $6 }' | sort | uniq | wc -l") . PHP_EOL; ?> 
 Shark Plugin Groups:		<?php echo exec("grep -o -i 'plugin group' /shark/log/config_gen.log | wc -l") . PHP_EOL; ?> 
