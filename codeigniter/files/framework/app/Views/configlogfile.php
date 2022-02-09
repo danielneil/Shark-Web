@@ -14,9 +14,9 @@
 
 <section>
 
-	<h1>Overview</h1>
+<h1>Overview</h1>
 	
-	<p>Shark's running configuration comprises of:</p>
+<p>Shark's running configuration comprises of:</p>
 
 <pre><code>
 <h4>Instruments</h4>		
@@ -39,17 +39,15 @@ Trading Configuration File: 	<a href ="http://<?php echo $_SERVER['SERVER_ADDR']
 Number of data files:		<?php echo exec("find /shark/historical/yahoo_finance_data/ -type f | wc -l") . PHP_EOL; ?> 
 </code></pre>
 
-</section>
-
-<div class="further">
-	
-<section>
-
 <h1>Configuration File Parser Log</h1>
-	
+
+<pre><code>	
+
 <?php
 echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log")));
 ?>
+
+</code></pre>
 
 </section>
 
