@@ -222,10 +222,10 @@ Shark Plugins: 			3
 Trading Brokers: 		0
 
 <h4>Git Configuration Repositories</h4>
-Shark Config Git REPO:		<?php echo exec("cd /shark/Shark-Config && git config --get remote.origin.url"); ?> <br />
-Shark Plugin Git REPO:		<?php echo exec("cd /shark/Shark-Plugins && git config --get remote.origin.url"); ?> <br />
-Shark Web Git REPO: 		<?php echo exec("cd /shark/Shark-Web && git config --get remote.origin.url"); ?> <br />
-Shark Brokers Git REPO:		<?php echo exec("cd /shark/Shark-Brokers && git config --get remote.origin.url"); ?> <br />
+Shark Config Git REPO:		<?php echo exec("cd /shark/Shark-Config && git config --get remote.origin.url") . PHP_EOL; ?> 
+Shark Plugin Git REPO:		<?php echo exec("cd /shark/Shark-Plugins && git config --get remote.origin.url") . PHP_EOL; ?> 
+Shark Web Git REPO: 		<?php echo exec("cd /shark/Shark-Web && git config --get remote.origin.url") . PHP_EOL; ?> 
+Shark Brokers Git REPO:		<?php echo exec("cd /shark/Shark-Brokers && git config --get remote.origin.url") . PHP_EOL; ?> 
 
 <h4>Configuration Files</h4>
 Trading Configuration File: <a href ="http://<?php echo $_SERVER['SERVER_ADDR'];?>/shark-web/Shark-Config/config/files/trading-config.yml">trading-config.yml</a>
