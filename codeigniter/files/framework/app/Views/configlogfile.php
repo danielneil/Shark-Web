@@ -247,6 +247,17 @@ echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log")));
 </section>
 
 </div>
+	
+<footer>
 
+
+	<div class="copyrights">
+
+		<p>&copy; <?= date('Y') ?> CodeIgniter Foundation. CodeIgniter is open source project released under the MIT open source licence.</p>
+
+	</div>
+
+</footer>	
+	
 </body>
 </html>
