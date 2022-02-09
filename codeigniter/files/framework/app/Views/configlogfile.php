@@ -237,7 +237,7 @@ Shark Brokers Git REPO:		https://github.com/danielneil/Shark-Config.git
 
 		<h1>Configuration Log File</h1>
 <?php
-echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log"));
+echo nl2br(htmlentities(file_get_contents("/shark/log/config_gen.log")));
 ?>
 	</section>
 
