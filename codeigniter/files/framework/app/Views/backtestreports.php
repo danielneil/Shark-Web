@@ -105,7 +105,7 @@ else
 
 $profitableTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.profitabletrades.json";
 
-if (file_exists($totalTrades_fileName)) {
+if (file_exists($profitableTrades_fileName)) {
 	
 	$jsonObject = file_get_contents($profitableTrades_fileName);
 	$json_arr = json_decode($jsonObject, true);
@@ -118,8 +118,12 @@ if (file_exists($totalTrades_fileName)) {
 	echo $json_arr['profitable_trades'][0]['min_profit'] . PHP_EOL;
 
 	echo "Avg. return\t\tReturns std. dev.\t\tMax. return\t\tMin. return" . PHP_EOL;
+		
+	echo $json_arr['profitable_trades'][0]['avg_return'] . "%\t\t";
+	echo $json_arr['profitable_trades'][0]['returns_std_dev'] . "%\t\t";
+	echo $json_arr['profitable_trades'][0]['max_return'] .  "%\t\t";
+	echo $json_arr['profitable_trades'][0]['min_return'] . "%" . PHP_EOL;
 	
-239 %		313 %			681 %		6 %
 <?php
 }
 else
