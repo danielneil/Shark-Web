@@ -138,8 +138,7 @@ if (file_exists($unprofitableTrades_fileName)) {
 	$jsonObject = file_get_contents($unprofitableTrades_fileName);
 	$json_arr = json_decode($jsonObject, true);
 
-	echp "Avg. loss\t\tLosses std. dev.\t\tMax. loss\t\tMin. loss" . PHP_EOL;
-	$-46		$49			$-146		$-6
+	echo "Avg. loss\t\tLosses std. dev.\t\tMax. loss\t\tMin. loss" . PHP_EOL;
 	
 	echo "$" . $json_arr['unprofitable_trades'][0]['avg_loss'] . "\t\t";
 	echo "$" . $json_arr['unprofitable_trades'][0]['losses_std_dev'] . "\t\t";
