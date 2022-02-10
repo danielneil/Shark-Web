@@ -127,6 +127,7 @@ else
         echo "Datafile " . $profitableTrades_fileName . " not found...";
 }
 ?>
+
 <div style='font-weight: bold'>Unprofitable Trade Summary</div>
 <?php
 
