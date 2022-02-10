@@ -68,15 +68,15 @@ $totalTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.totaltrades.js
 
 if (file_exists($totalTrades_fileName)) {
 
-$jsonObject = file_get_contents($totalTrades_fileName);
+	$jsonObject = file_get_contents($totalTrades_fileName);
 
-?>
-Avg. profit	Profits std. dev.	Max. profit	Min. profit
-$97		$339			$1042		$-146
+	$json_arr = json_decode($jsonObject, true);
 
-Avg. return	Returns std. dev.	Max. return	Min. return
-76		214 %			681 %		-9 %
-<?php
+	echo "Avg. profit\t\tProfits std. dev.\t\tMax. profit\t\tMin. profit" . PHP_EOL;
+	echo $json_arr['total_trades'][0]['avg_profit'] . "\t\t" . $json_arr['backtest_summary'][0]['profits_std_dev'] . $json_arr['total_trades'][0]['max_profit'] . . $json_arr['total_trades'][0]['min_profit'] . PHP_EOL;
+
+	echo "Avg. return\t\tReturns std. dev.\t\tMax. return\t\tMin. return" . PHP_EOL;
+	echo $json_arr['total_trades'][0]['avg_return'] . "\t\t" . $json_arr['total_trades'][0]['returns_std_dev'] . "\t\t" . $json_arr['total_trades'][0]['max_return'] .  "\t\t" . $json_arr['total_trades'][0]['min_return'] . PHP_EOL;
 }
 else
 {
@@ -90,15 +90,19 @@ else
 $profitableTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.profitabletrades.json";
 
 if (file_exists($totalTrades_fileName)) {
+	
+	$jsonObject = file_get_contents($profitableTrades_fileName);
+	$json_arr = json_decode($jsonObject, true);
 
-$jsonObject = file_get_contents($profitableTrades_fileName);
+	echp "Avg. profit\t\tProfits std. dev.\t\tMax. profit\t\tMin. profit" . PHP_EOL;
+	
+	echo $json_arr['profitable_trades'][0]['avg_profit'] . "\t\t";
+	echo $json_arr['profitable_trades'][0]['profits_std_dev'] . "\t\t";
+	echo $json_arr['profitable_trades'][0]['max_profit'] .  "\t\t";
+	echo $json_arr['profitable_trades'][0]['min_profit'] . PHP_EOL;
 
-?>
-
-Avg. profit	Profits std. dev.	Max. profit	Min. profit
-$384		$466			$1042		$31
-
-Avg. return	Returns std. dev.	Max. return	Min. return
+	echo "Avg. return\t\tReturns std. dev.\t\tMax. return\t\tMin. return" . PHP_EOL;
+	
 239 %		313 %			681 %		6 %
 <?php
 }
