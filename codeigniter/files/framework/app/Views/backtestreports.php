@@ -102,7 +102,6 @@ else
 
 <div style='font-weight: bold'>Profitable Trade Summary</div>
 <?php
-
 $profitableTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.profitabletrades.json";
 
 if (file_exists($profitableTrades_fileName)) {
@@ -129,7 +128,6 @@ else
         echo "Datafile " . $profitableTrades_fileName . " not found...";
 }
 ?>
-
 <div style='font-weight: bold'>Unprofitable Trade Summary</div>
 <?php
 
