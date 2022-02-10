@@ -41,6 +41,7 @@ if (file_exists($summary_fileName)) {
 	echo $json_arr['backtest_summary'][0]['total_trades'] . "\t\t";
 	echo $json_arr['backtest_summary'][0]['wins'] . "\t\t";
 	echo $json_arr['backtest_summary'][0]['losses'] . "\n\n";
+}
 else
 {
 	echo "Datafile " . $summary_fileName . " not found...";
