@@ -139,16 +139,24 @@ $unprofitableTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.unprofi
 
 if (file_exists($unprofitableTrades_fileName)) {
 
-$jsonObject = file_get_contents($unprofitableTrades_fileName);
+	$jsonObject = file_get_contents($unprofitableTrades_fileName);
+	$json_arr = json_decode($jsonObject, true);
 
-?>
+	echp "Avg. loss\t\tLosses std. dev.\t\tMax. loss\t\tMin. loss" . PHP_EOL;
+	$-46		$49			$-146		$-6
+	
+	echo "$" . $json_arr['unprofitable_trades'][0]['avg_loss'] . "\t\t";
+	echo "$" . $json_arr['unprofitable_trades'][0]['losses_std_dev'] . "\t\t";
+	echo "$" . $json_arr['unprofitable_trades'][0]['max_loss'] .  "\t\t";
+	echo "$" . $json_arr['unprofitable_trades'][0]['min_loss'] . PHP_EOL;
 
-Avg. loss	Losses std. dev.	Max. loss	Min. loss
-$-46		$49			$-146		$-6
+	echp "Avg. return\t\tReturns std. dev.\t\tMax. return\t\tMin. return . PHP_EOL;
 
-Avg. return	Returns std. dev.	Max. return	Min. return
--5 %		3 %			-1 %		-9 %
-<?php
+	echo "$" . $json_arr['unprofitable_trades'][0]['avg_return'] . "%\t\t";
+	echo "$" . $json_arr['unprofitable_trades'][0]['returns_std_dev'] . "%\t\t";
+	echo "$" . $json_arr['unprofitable_trades'][0]['max_return'] .  "%\t\t";
+	echo "$" . $json_arr['unprofitable_trades'][0]['min_return'] . "%" . PHP_EOL;
+
 }
 else
 {
