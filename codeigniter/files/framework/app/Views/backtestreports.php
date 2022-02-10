@@ -1,4 +1,3 @@
-<!-- HEADER: MENU + HEROE SECTION -->
 <header>
 
 	<div class="heroe">
