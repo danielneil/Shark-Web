@@ -82,7 +82,7 @@ if (file_exists($totalTrades_fileName)) {
 	echo "Avg. profit\t\tProfits std. dev.\t\tMax. profit\t\tMin. profit" . PHP_EOL;
 	
 	echo $json_arr['total_trades'][0]['avg_profit'] . "\t\t";
-	echo $json_arr['backtest_summary'][0]['profits_std_dev'] . "\t\t";
+	echo $json_arr['total_trades'][0]['profits_std_dev'] . "\t\t";
 	echo $json_arr['total_trades'][0]['max_profit'] . "\t\t";
 	echo $json_arr['total_trades'][0]['min_profit'] . PHP_EOL;
 
