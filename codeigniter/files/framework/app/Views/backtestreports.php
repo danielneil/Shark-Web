@@ -27,13 +27,21 @@ if (file_exists($summary_fileName)) {
 	$json_arr = json_decode($jsonObject, true);
 
 	echo "Final portfolio value\t\tCumulative returns" . PHP_EOL;
-	echo $json_arr['backtest_summary'][0]['final_portfolio_value'] . "\t\t" . $json_arr['backtest_summary'][0]['cumulative_returns'] . PHP_EOL;
+	
+	echo $json_arr['backtest_summary'][0]['final_portfolio_value'] . "\t\t";
+	echo $json_arr['backtest_summary'][0]['cumulative_returns'] . PHP_EOL;
 
 	echo "Sharpe ratio\t\tMax. drawdown\t\tLongest drawdown duration" . PHP_EOL;
-	echo $json_arr['backtest_summary'][0]['sharpe_ratio'] . "\t\t" . $json_arr['backtest_summary'][0]['max_drawdown'] . "\t\t" . $json_arr['backtest_summary'][0]['longest_drawdown_duration'] . PHP_EOL;
+	
+	echo $json_arr['backtest_summary'][0]['sharpe_ratio'] . "\t\t"; 
+	echo $json_arr['backtest_summary'][0]['max_drawdown'] . "\t\t" ;
+	echo $json_arr['backtest_summary'][0]['longest_drawdown_duration'] . PHP_EOL;
 
 	echo "Total trades\t\tWins\t\tLosses" . PHP_EOL;
-	echo $json_arr['backtest_summary'][0]['total_trades'] . "\t\t" . $json_arr['backtest_summary'][0]['wins'] . "\t\t" . $json_arr['backtest_summary'][0]['losses'] . PHP_EOL;
+	
+	echo $json_arr['backtest_summary'][0]['total_trades'] . "\t\t";
+	echo $json_arr['backtest_summary'][0]['wins'] . "\t\t";
+	echo $json_arr['backtest_summary'][0]['losses'] . PHP_EOL;
 }
 else
 {
@@ -73,10 +81,18 @@ if (file_exists($totalTrades_fileName)) {
 	$json_arr = json_decode($jsonObject, true);
 
 	echo "Avg. profit\t\tProfits std. dev.\t\tMax. profit\t\tMin. profit" . PHP_EOL;
-	echo $json_arr['total_trades'][0]['avg_profit'] . "\t\t" . $json_arr['backtest_summary'][0]['profits_std_dev'] . $json_arr['total_trades'][0]['max_profit'] . . $json_arr['total_trades'][0]['min_profit'] . PHP_EOL;
+	
+	echo $json_arr['total_trades'][0]['avg_profit'] . "\t\t";
+	echo $json_arr['backtest_summary'][0]['profits_std_dev'] . "\t\t";
+	echo $json_arr['total_trades'][0]['max_profit'] . "\t\t";
+	echo $json_arr['total_trades'][0]['min_profit'] . PHP_EOL;
 
 	echo "Avg. return\t\tReturns std. dev.\t\tMax. return\t\tMin. return" . PHP_EOL;
-	echo $json_arr['total_trades'][0]['avg_return'] . "\t\t" . $json_arr['total_trades'][0]['returns_std_dev'] . "\t\t" . $json_arr['total_trades'][0]['max_return'] .  "\t\t" . $json_arr['total_trades'][0]['min_return'] . PHP_EOL;
+	
+	echo $json_arr['total_trades'][0]['avg_return'] . "\t\t";
+	echo $json_arr['total_trades'][0]['returns_std_dev'] . "\t\t";
+	echo $json_arr['total_trades'][0]['max_return'] . "\t\t";
+	echo $json_arr['total_trades'][0]['min_return'] . PHP_EOL;
 }
 else
 {
