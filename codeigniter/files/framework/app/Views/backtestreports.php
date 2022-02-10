@@ -123,8 +123,6 @@ if (file_exists($profitableTrades_fileName)) {
 	echo $json_arr['profitable_trades'][0]['returns_std_dev'] . "%\t\t";
 	echo $json_arr['profitable_trades'][0]['max_return'] .  "%\t\t";
 	echo $json_arr['profitable_trades'][0]['min_return'] . "%" . PHP_EOL;
-	
-<?php
 }
 else
 {
