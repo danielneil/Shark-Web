@@ -34,19 +34,21 @@ Total trades    	Wins    		Losses
 
 <div style="text-align: left"><img src ="http://172.105.187.181/shark-web/reports/ADA-USD.png" /></div>
 <pre><code>
-<div style='font-weight: bold'>Additional Portfolio Information</div>
-LAvg. profit	LProfits std. dev.	LMax. profit	LMin. profit
+<div style='font-weight: bold'>Total Trade Summary</div>
+Avg. profit	Profits std. dev.	Max. profit	Min. profit
 $97		$339			$1042		$-146
 
-LAvg. return	LReturns std. dev.	LMax. return	LMin. return
+Avg. return	Returns std. dev.	Max. return	Min. return
 76		214 %			681 %		-9 %
 
+<div style='font-weight: bold'>Profitable Trade Summary</div>
 Avg. profit	Profits std. dev.	Max. profit	Min. profit
 $384		$466			$1042		$31
 
 Avg. return	Returns std. dev.	Max. return	Min. return
 239 %		313 %			681 %		6 %
 
+<div style='font-weight: bold'>Unprofitable Trade Summary</div>
 Avg. loss	Losses std. dev.	Max. loss	Min. loss
 $-46		$49			$-146		$-6
 
