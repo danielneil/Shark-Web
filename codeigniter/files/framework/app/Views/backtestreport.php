@@ -13,6 +13,7 @@
 
 
 <h2>Portfolio Summary</h2>
+<hr />
 <pre><code>
 <?php
 
