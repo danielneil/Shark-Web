@@ -6,6 +6,8 @@ class Portfolio extends BaseController
 {
 	public function index()
 	{
-		return view('portfolio_correlation');
+                echo view('header');
+                echo view('portfolio_correlation');
+                echo view('footer');
 	}
 }
