@@ -24,13 +24,12 @@
 		foreach (scandir($history_dir) as $f)
 		{
 			$fileName = $history_dir . '/'. $f;
-			
-			$files = explode(".", $fileName);
-			
-			$ticker = $files[0];
 
 			if ($f !== '.' and $f !== '..')
 			{
+				$files = explode(".", $fileName);			
+				$ticker = $files[0];
+				
 				echo "<a href=/framework/public/index.php/BacktestReport?ticker=" . $ticker . ">" . $ticker . "</a>"  . PHP_EOL ;
 			}
 		}
