@@ -83,14 +83,14 @@ if (file_exists($totalTrades_fileName)) {
 	echo $json_arr['total_trades'][0]['avg_profit'] . "\t\t\t";
 	echo $json_arr['total_trades'][0]['profits_std_dev'] . "\t\t";
 	echo $json_arr['total_trades'][0]['max_profit'] . "\t\t";
-	echo $json_arr['total_trades'][0]['min_profit'] . PHP_EOL;
+	echo $json_arr['total_trades'][0]['min_profit'] . "\n\n";
 
 	echo "Avg. return\t\tReturns std. dev.\t\tMax. return\t\tMin. return" . PHP_EOL;
 	
 	echo $json_arr['total_trades'][0]['avg_return'] . "\t\t";
 	echo $json_arr['total_trades'][0]['returns_std_dev'] . "\t\t";
 	echo $json_arr['total_trades'][0]['max_return'] . "\t\t";
-	echo $json_arr['total_trades'][0]['min_return'] . PHP_EOL;
+	echo $json_arr['total_trades'][0]['min_return'] . "\n\n";
 }
 else
 {
@@ -112,14 +112,14 @@ if (file_exists($profitableTrades_fileName)) {
 	echo $json_arr['profitable_trades'][0]['avg_profit'] . "\t\t";
 	echo $json_arr['profitable_trades'][0]['profits_std_dev'] . "\t\t";
 	echo $json_arr['profitable_trades'][0]['max_profit'] .  "\t\t";
-	echo $json_arr['profitable_trades'][0]['min_profit'] . PHP_EOL;
+	echo $json_arr['profitable_trades'][0]['min_profit'] . "\n\n";
 
 	echo "Avg. return\t\tReturns std. dev.\t\tMax. return\t\tMin. return" . PHP_EOL;
 		
 	echo $json_arr['profitable_trades'][0]['avg_return'] . "%\t\t";
 	echo $json_arr['profitable_trades'][0]['returns_std_dev'] . "%\t\t";
 	echo $json_arr['profitable_trades'][0]['max_return'] .  "%\t\t";
-	echo $json_arr['profitable_trades'][0]['min_return'] . "%" . PHP_EOL;
+	echo $json_arr['profitable_trades'][0]['min_return'] . "%" . "\n\n";
 }
 else
 {
@@ -142,14 +142,14 @@ if (file_exists($unprofitableTrades_fileName)) {
 	echo "$" . $json_arr['unprofitable_trades'][0]['avg_loss'] . "\t\t";
 	echo "$" . $json_arr['unprofitable_trades'][0]['losses_std_dev'] . "\t\t";
 	echo "$" . $json_arr['unprofitable_trades'][0]['max_loss'] .  "\t\t";
-	echo "$" . $json_arr['unprofitable_trades'][0]['min_loss'] . PHP_EOL;
+	echo "$" . $json_arr['unprofitable_trades'][0]['min_loss'] . "\n\n";
 
 	echo "Avg. return\t\tReturns std. dev.\t\tMax. return\t\tMin. return" . PHP_EOL;
 
 	echo "$" . $json_arr['unprofitable_trades'][0]['avg_return'] . "%\t\t";
 	echo "$" . $json_arr['unprofitable_trades'][0]['returns_std_dev'] . "%\t\t";
 	echo "$" . $json_arr['unprofitable_trades'][0]['max_return'] .  "%\t\t";
-	echo "$" . $json_arr['unprofitable_trades'][0]['min_return'] . "%" . PHP_EOL;
+	echo "$" . $json_arr['unprofitable_trades'][0]['min_return'] . "%" . "\n\n";
 
 }
 else
