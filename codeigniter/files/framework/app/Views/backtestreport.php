@@ -1,3 +1,11 @@
+<?php
+ function cal_percentage($num_amount, $num_total) {
+  $count1 = $num_amount / $num_total;
+  $count2 = $count1 * 100;
+  $count = number_format($count2, 0);
+  return $count;
+}
+?>
 <header>
 
 	<div class="heroe">
@@ -56,13 +64,6 @@ if (file_exists($summary_fileName)) {
     	echo '<td>&nbsp;</td>';
 	echo '</tr>';
 	
-	$total = $json_arr['backtest_summary'][0]['total_trades'];
-	$wins = $json_arr['backtest_summary'][0]['wins'];
-	$losses = $json_arr['backtest_summary'][0]['losses'];
-	
-	$win_percent = ($wins / 100) * $total;
-	$loss_percent = ($losses / 100) * $total;
-	
 	echo "<tr>";
 	echo "<th>Total trades</th>";
 	echo "<th>Wins</th>";
@@ -70,8 +71,8 @@ if (file_exists($summary_fileName)) {
 	echo "</tr>";
 	echo "<tr>";
 	echo "<td>" . $json_arr['backtest_summary'][0]['total_trades'];
-	echo "<td>" . $json_arr['backtest_summary'][0]['wins'] . "(" . $win_percent . "%)";
-	echo "<td>" . $json_arr['backtest_summary'][0]['losses'] . "(" . $loss_percent . "%)";
+	echo "<td>" . $json_arr['backtest_summary'][0]['wins'] . "(" . cal_percentage($json_arr['backtest_summary'][0]['wins'], $json_arr['backtest_summary'][0]['total_trades']) . "%)";
+	echo "<td>" . $json_arr['backtest_summary'][0]['losses'] . "(" . cal_percentage($json_arr['backtest_summary'][0]['losses'], $json_arr['backtest_summary'][0]['total_trades']) . "%)";
 	echo "</tr>";
 	echo "</table>";
 }
