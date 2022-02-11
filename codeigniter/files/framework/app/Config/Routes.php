@@ -54,5 +54,6 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
 
 $route['console'] = 'Console';
 $route['portfolio'] = 'Portfolio';
-$route['backtestreports'] = 'BacktestReports';
 $route['configlogfile'] = 'ConfigLogfile';
+$route['backtestreports'] = 'BacktestReports';
+$route['backtestreport'] = 'BacktestReport';
