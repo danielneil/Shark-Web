@@ -179,10 +179,10 @@ if (file_exists($profitableTrades_fileName)) {
 	echo "<th>Min. return</th>";
 	echo "</tr>";
 	echo "<tr>";
-	echo "<td>$" . $json_arr['profitable_trades'][0]['avg_return'] . "%";
-	echo "<td>$" . $json_arr['profitable_trades'][0]['returns_std_dev'] . "%";
-	echo "<td>$" . $json_arr['profitable_trades'][0]['max_return'] . "%";
-	echo "<td>$" . $json_arr['profitable_trades'][0]['min_return'] . "%";
+	echo "<td>" . $json_arr['profitable_trades'][0]['avg_return'] . "%";
+	echo "<td>" . $json_arr['profitable_trades'][0]['returns_std_dev'] . "%";
+	echo "<td>" . $json_arr['profitable_trades'][0]['max_return'] . "%";
+	echo "<td>" . $json_arr['profitable_trades'][0]['min_return'] . "%";
 	echo "</tr>";
 	echo "</table>";
 	
