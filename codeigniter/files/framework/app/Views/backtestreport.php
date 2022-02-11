@@ -174,6 +174,8 @@ if (file_exists($profitableTrades_fileName)) {
 	echo "<th>Returns std. dev.</th>";
 	echo "<th>Max. return</th>";
 	echo "<th>Min. return</th>";
+	echo "</tr>";
+	echo "<tr>";
 	echo "<td>$" . $json_arr['profitable_trades'][0]['avg_return'];
 	echo "<td>$" . $json_arr['profitable_trades'][0]['returns_std_dev'];
 	echo "<td>$" . $json_arr['profitable_trades'][0]['max_return'];
