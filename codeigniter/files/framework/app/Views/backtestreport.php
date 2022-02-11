@@ -2,7 +2,7 @@
 
 	<div class="heroe">
 		<h1>Backtest Report - <?php echo $ticker; ?></h1>
-		<h2>Backtest against instrument <?php echo $ticker; ?>, generated <?php echo date("F d Y H:i:s.", filemtime($ticker . ".backtest.summary.json")); ?></h2>
+		<h2>Backtest against instrument <?php echo $ticker; ?>, generated <?php echo date("F d Y H:i:s.", filemtime("/shark/reports/" . $ticker . ".backtest.summary.json")); ?></h2>
 	</div>
 
 </header>
