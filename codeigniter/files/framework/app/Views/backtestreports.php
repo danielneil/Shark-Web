@@ -13,7 +13,7 @@
 <div style='font-weight: bold'>Portfolio Summary</div> 
 <?php 
 
-	$report_dir = '/shark/report';
+	$report_dir = '/shark/reports';
 
         $files = scandir($report_dir);
 
