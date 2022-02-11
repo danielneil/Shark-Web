@@ -8,7 +8,7 @@
 </header>
 <section>
 
-	<h1>Portfolio (Single Instrument - <?php echo $ticker; ?>)</h1>
+	<h1>Backtest: Single Instrument - <?php echo $ticker; ?></h1>
 	<p>This report comprises of the results of a backtest ran against a single instrument, <?php echo $ticker; ?>:</p>
 
 
@@ -200,22 +200,37 @@ if (file_exists($unprofitableTrades_fileName)) {
 
 	$jsonObject = file_get_contents($unprofitableTrades_fileName);
 	$json_arr = json_decode($jsonObject, true);
-
-	echo "Avg. loss\t\tLosses std. dev.\t\tMax. loss\t\tMin. loss" . PHP_EOL;
 	
-	echo "$" . $json_arr['unprofitable_trades'][0]['avg_loss'] . "\t\t";
-	echo "$" . $json_arr['unprofitable_trades'][0]['losses_std_dev'] . "\t\t";
-	echo "$" . $json_arr['unprofitable_trades'][0]['max_loss'] .  "\t\t";
-	echo "$" . $json_arr['unprofitable_trades'][0]['min_loss'] . "\n\n";
+	echo "<table style='text-align: left; width: 100%'>";
+	echo "<tr>";
 
-	echo "Avg. return\t\tReturns std. dev.\t\tMax. return\t\tMin. return" . PHP_EOL;
-
-	echo "$" . $json_arr['unprofitable_trades'][0]['avg_return'] . "%\t\t";
-	echo "$" . $json_arr['unprofitable_trades'][0]['returns_std_dev'] . "%\t\t";
-	echo "$" . $json_arr['unprofitable_trades'][0]['max_return'] .  "%\t\t";
-	echo "$" . $json_arr['unprofitable_trades'][0]['min_return'] . "%" . "\n\n";
-	
-	echo "<br />";
+	echo "<th>Avg. loss</th>";
+	echo "<th>Losses std. dev.</th>";
+	echo "<th>Max. loss</th>";
+	echo "<th>Min. loss</th>";
+	echo "</tr>";
+	echo "<tr>";	
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['avg_loss'];
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['losses_std_dev'];
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['max_loss'];
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['min_loss'];
+	echo "</tr>";
+	echo '<tr>';
+    	echo '<td>&nbsp;</td>';
+	echo '</tr>';
+	echo "<tr>";	
+	echo "<th>Avg. return</th>";
+	echo "<th>Returns std. dev.</th>";
+	echo "<th>Max. return</th>";
+	echo "<th>Min. return</th>";
+	echo "</tr>";
+	echo "<tr>";	
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['avg_return'];
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['returns_std_dev'];
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['max_return'];
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['min_return'];;
+	echo "</tr>";
+	echo "</table>";
 }
 else
 {
