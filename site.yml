@@ -1,6 +1,7 @@
 ---
 - name: Building Shark Web
-  hosts: shark_server
+  hosts: localhost
+  connection: local 
   become: true
 
   roles:
