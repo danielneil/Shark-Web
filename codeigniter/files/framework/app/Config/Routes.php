@@ -57,3 +57,4 @@ $route['portfolio'] = 'Portfolio';
 $route['configlogfile'] = 'ConfigLogfile';
 $route['backtestreports'] = 'BacktestReports';
 $route['backtestreport'] = 'BacktestReport';
+$route['orders'] = 'Orders';
