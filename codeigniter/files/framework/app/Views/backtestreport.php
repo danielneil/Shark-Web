@@ -48,12 +48,18 @@ if (file_exists($summary_fileName)) {
 	echo "</tr>";
 	echo "<table>";
 
-
-	echo "Total trades\t\tWins\t\tLosses";
-	
-	echo $json_arr['backtest_summary'][0]['total_trades'];
-	echo $json_arr['backtest_summary'][0]['wins'];
-	echo $json_arr['backtest_summary'][0]['losses'];
+	echo "<table>";
+	echo "<tr>";
+	echo "<th>Total trades</th>";
+	echo "<th>Wins</th>";
+	echo "<th>Losses</th>";
+	echo "</tr>";
+	echo "<tr>";
+	echo "<td>" . $json_arr['backtest_summary'][0]['total_trades'];
+	echo "<td>" . $json_arr['backtest_summary'][0]['wins'];
+	echo "<td>" . $json_arr['backtest_summary'][0]['losses'];
+	echo "</tr>";
+	echo "<table>";
 }
 else
 {
