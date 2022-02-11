@@ -32,7 +32,7 @@ if (file_exists($summary_fileName)) {
 	echo "</tr>";
 	echo "<tr>";
 	echo "<td>$" . $json_arr['backtest_summary'][0]['final_portfolio_value'];
-	echo "<td>" . $json_arr['backtest_summary'][0]['cumulative_returns'];
+	echo "<td>" . $json_arr['backtest_summary'][0]['cumulative_returns'] . "%";
 	echo "</tr>";
 
 	echo '<tr>';
@@ -46,8 +46,8 @@ if (file_exists($summary_fileName)) {
 	echo "</tr>";
 	echo "<tr>";
 	echo "<td>" . $json_arr['backtest_summary'][0]['sharpe_ratio']; 
-	echo "<td>" . $json_arr['backtest_summary'][0]['max_drawdown'];
-	echo "<td>" . $json_arr['backtest_summary'][0]['longest_drawdown_duration'];
+	echo "<td>" . $json_arr['backtest_summary'][0]['max_drawdown'] . "%";
+	echo "<td>" . $json_arr['backtest_summary'][0]['longest_drawdown_duration'] . " days";
 	echo "</tr>";
 
 	echo '<tr>';
@@ -130,10 +130,10 @@ if (file_exists($totalTrades_fileName)) {
 	echo "<th>Min. return</th>";
 	echo "</tr>";
 	echo "<tr>";
-	echo "<td>" . $json_arr['total_trades'][0]['avg_return'];
-	echo "<td>" . $json_arr['total_trades'][0]['returns_std_dev'];
-	echo "<td>" . $json_arr['total_trades'][0]['max_return'];
-	echo "<td>" . $json_arr['total_trades'][0]['min_return'];
+	echo "<td>" . $json_arr['total_trades'][0]['avg_return'] . "%";
+	echo "<td>" . $json_arr['total_trades'][0]['returns_std_dev'] . "%";
+	echo "<td>" . $json_arr['total_trades'][0]['max_return'] . "%";
+	echo "<td>" . $json_arr['total_trades'][0]['min_return'] . "%";
 	echo "</tr>";
 	echo "</table>";
 	
@@ -179,9 +179,9 @@ if (file_exists($profitableTrades_fileName)) {
 	echo "<th>Min. return</th>";
 	echo "</tr>";
 	echo "<tr>";
-	echo "<td>$" . $json_arr['profitable_trades'][0]['avg_return'];
-	echo "<td>$" . $json_arr['profitable_trades'][0]['returns_std_dev'];
-	echo "<td>$" . $json_arr['profitable_trades'][0]['max_return'];
+	echo "<td>$" . $json_arr['profitable_trades'][0]['avg_return'] . "%";
+	echo "<td>$" . $json_arr['profitable_trades'][0]['returns_std_dev'] . "%";
+	echo "<td>$" . $json_arr['profitable_trades'][0]['max_return'] . "%";
 	echo "<td>$" . $json_arr['profitable_trades'][0]['min_return'] . "%";
 	echo "</tr>";
 	echo "</table>";
@@ -229,10 +229,10 @@ if (file_exists($unprofitableTrades_fileName)) {
 	echo "<th>Min. return</th>";
 	echo "</tr>";
 	echo "<tr>";	
-	echo "<td>$" . $json_arr['unprofitable_trades'][0]['avg_return'];
-	echo "<td>$" . $json_arr['unprofitable_trades'][0]['returns_std_dev'];
-	echo "<td>$" . $json_arr['unprofitable_trades'][0]['max_return'];
-	echo "<td>$" . $json_arr['unprofitable_trades'][0]['min_return'];;
+	echo "<td>" . $json_arr['unprofitable_trades'][0]['avg_return'] . "%";
+	echo "<td>" . $json_arr['unprofitable_trades'][0]['returns_std_dev'] . "%";
+	echo "<td>" . $json_arr['unprofitable_trades'][0]['max_return'] . "%";
+	echo "<td>" . $json_arr['unprofitable_trades'][0]['min_return'] . "%";
 	echo "</tr>";
 	echo "</table>";
 }
