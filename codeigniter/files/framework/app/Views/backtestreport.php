@@ -71,8 +71,8 @@ if (file_exists($summary_fileName)) {
 	echo "</tr>";
 	echo "<tr>";
 	echo "<td>" . $json_arr['backtest_summary'][0]['total_trades'];
-	echo "<td>" . $json_arr['backtest_summary'][0]['wins'] . "(" . cal_percentage($json_arr['backtest_summary'][0]['wins'], $json_arr['backtest_summary'][0]['total_trades']) . "%)";
-	echo "<td>" . $json_arr['backtest_summary'][0]['losses'] . "(" . cal_percentage($json_arr['backtest_summary'][0]['losses'], $json_arr['backtest_summary'][0]['total_trades']) . "%)";
+	echo "<td>" . $json_arr['backtest_summary'][0]['wins'] . " (" . cal_percentage($json_arr['backtest_summary'][0]['wins'], $json_arr['backtest_summary'][0]['total_trades']) . "%)";
+	echo "<td>" . $json_arr['backtest_summary'][0]['losses'] . " (" . cal_percentage($json_arr['backtest_summary'][0]['losses'], $json_arr['backtest_summary'][0]['total_trades']) . "%)";
 	echo "</tr>";
 	echo "</table>";
 }
