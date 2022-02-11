@@ -24,7 +24,7 @@ if (file_exists($summary_fileName)) {
 
 	$json_arr = json_decode($jsonObject, true);
 
-	echo "<table style='width:100%'>";
+	echo "<table>";
 	echo "<tr>";
 	echo "<th>Final portfolio value</th>";
 	echo "<th>Cumulative returns</th>";
@@ -37,7 +37,7 @@ if (file_exists($summary_fileName)) {
 
 	echo "<br />";
 	
-	echo "<table style='width:100%'>";
+	echo "<table>";
 	echo "<tr>";
 	echo "<th>Sharpe ratio</th>";
 	echo "<th>Max. drawdown</th>";
@@ -52,7 +52,7 @@ if (file_exists($summary_fileName)) {
 
 	echo "<br />";
 	
-	echo "<table style='width:100%'>";
+	echo "<table>";
 	echo "<tr>";
 	echo "<th>Total trades</th>";
 	echo "<th>Wins</th>";
