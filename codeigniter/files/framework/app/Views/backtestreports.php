@@ -28,7 +28,7 @@
 				$files = explode(".", $f);			
 				$ticker = $files[0];
 				
-				aarray_push($a, $ticker");
+				aarray_push($a, $ticker);
 			}
 		}
 		
