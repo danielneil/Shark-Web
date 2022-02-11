@@ -12,8 +12,8 @@
 	<p>This report comprises of the results of a backtest ran against a single instrument, <?php echo $ticker; ?>:</p>
 
 
+<h2>Portfolio Summary</h2>
 <pre><code>
-<div style='font-weight: bold'>Portfolio Summary</div> 
 <?php
 
 $summary_fileName = "/shark/reports/" . $ticker  . ".backtest.summary.json";
