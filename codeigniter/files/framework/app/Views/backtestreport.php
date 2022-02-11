@@ -24,7 +24,7 @@ if (file_exists($summary_fileName)) {
 
 	$json_arr = json_decode($jsonObject, true);
 
-	echo "<table style='text-align: left; width: 50%'>";
+	echo "<table style='text-align: left; width: 100%'>";
 	echo "<tr>";
 	echo "<th>Final portfolio value</th>";
 	echo "<th>Cumulative returns</th>";
