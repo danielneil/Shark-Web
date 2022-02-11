@@ -2,12 +2,12 @@
 
 namespace App\Controllers;
 
-class BacktestReport extends BaseController
+class BacktestReports extends BaseController
 {
 	public function index()
 	{
 		echo view('header');
-		echo view('backtestreport');
+		echo view('backtestreports');
 		echo view('footer');
 	}
 }
