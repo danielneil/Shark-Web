@@ -264,6 +264,7 @@ if (file_exists($dataFrameInfo_fileName)) {
 	echo "<th>Frequency</th>";
 	echo "<th>Start Date</th>";
 	echo "<th>End Date</th>";
+	echo "<th>Adjusted Close</th>";
 	echo "<th>Provider</th>";
 	echo "</tr>";
 	echo "<tr>";	
@@ -271,6 +272,7 @@ if (file_exists($dataFrameInfo_fileName)) {
 	echo "<td>" . $json_arr['dataframe_info'][0]['frequency'];	
 	echo "<td>" . $json_arr['dataframe_info'][0]['start_date'];
 	echo "<td>" . $json_arr['dataframe_info'][0]['end_date'];
+	echo "<td>" . $json_arr['dataframe_info'][0]['adjusted_close'];
 	echo "<td>" . $json_arr['dataframe_info'][0]['provider'];
 	echo "</tr>";
 	echo "</table>";
