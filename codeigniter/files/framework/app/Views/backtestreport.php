@@ -94,6 +94,7 @@ else
 	
 <pre><code>
 <div style='font-weight: bold'>All Trades</div>
+<hr />
 <?php
 
 $totalTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.totaltrades.json";
@@ -144,6 +145,7 @@ else
 ?>
 
 <div style='font-weight: bold'>Profitable Trades</div>
+<hr />
 <?php
 $profitableTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.profitabletrades.json";
 
@@ -192,6 +194,7 @@ else
 ?>
 
 <div style='font-weight: bold'>Unprofitable Trades</div>
+<hr />
 <?php
 
 $unprofitableTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.unprofitabletrades.json";
