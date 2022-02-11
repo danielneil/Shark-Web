@@ -6,11 +6,39 @@
 </header>
 <section>
 
-	<h1>Portfolio (Single Instrument - <?php echo $ticker; ?>)</h1>
-	<p>Reports which are still being processed will not appear below until their computation is complete.</p>
+	<h1>Completed Backtest Reports</h1>
+	<p>Reports which are still being processed will not appear below until their backtest computation is complete.</p>
 
 <pre><code>
 <div style='font-weight: bold'>Portfolio Summary</div> 
+<?php 
 
+	report_dir = '/shark/report';
+
+        $files = scandir($history_dir);
+
+        if ( count($files)-2) {
+
+		echo "<div style='font-weight: bold'>Instrument Report</div>" . PHP_EOL ;
+		
+		foreach (scandir($history_dir) as $f)
+		{
+			$fileName = $history_dir . '/'. $f;
+			
+			$files = explode(" ", $fileName);
+			
+			$ticker = $files[0];
+
+			if ($f !== '.' and $f !== '..')
+			{
+				echo "<a href=/framework/public/index.php/BacktestReport?ticker=" . $ticker . ">" . $ticker . "</a>"  . PHP_EOL ;
+			}
+		}
+	}
+	else 
+	{
+		echo "No report files found, they are probably still being generated...";	
+	}
+?> 
 </code></pre>
 </section>
