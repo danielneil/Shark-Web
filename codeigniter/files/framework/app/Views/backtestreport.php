@@ -37,7 +37,7 @@ if (file_exists($summary_fileName)) {
 
 	echo "<br />";
 	
-	echo "<table>";
+	echo "<table style='text-align: left; width: 50%'>";
 	echo "<tr>";
 	echo "<th>Sharpe ratio</th>";
 	echo "<th>Max. drawdown</th>";
@@ -52,7 +52,7 @@ if (file_exists($summary_fileName)) {
 
 	echo "<br />";
 	
-	echo "<table>";
+	echo "<table style='text-align: left; width: 50%'>";
 	echo "<tr>";
 	echo "<th>Total trades</th>";
 	echo "<th>Wins</th>";
