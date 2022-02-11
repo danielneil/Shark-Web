@@ -266,11 +266,11 @@ if (file_exists($dataFrameInfo_fileName)) {
 	echo "<th>Provider</th>";
 	echo "</tr>";
 	echo "<tr>";	
-	echo "<td>$" . $json_arr['unprofitable_trades'][0]['rows'];
-	echo "<td>$" . $json_arr['unprofitable_trades'][0]['frequency'];	
-	echo "<td>$" . $json_arr['unprofitable_trades'][0]['start_date'];
-	echo "<td>$" . $json_arr['unprofitable_trades'][0]['end_date'];
-	echo "<td>$" . $json_arr['unprofitable_trades'][0]['provider'];
+	echo "<td>$" . $json_arr['dataframe_info'][0]['rows'];
+	echo "<td>$" . $json_arr['dataframe_info'][0]['frequency'];	
+	echo "<td>$" . $json_arr['dataframe_info'][0]['start_date'];
+	echo "<td>$" . $json_arr['dataframe_info'][0]['end_date'];
+	echo "<td>$" . $json_arr['dataframe_info'][0]['provider'];
 	echo "</tr>";
 	echo "</table>";
 }
