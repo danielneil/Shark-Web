@@ -56,6 +56,13 @@ if (file_exists($summary_fileName)) {
     	echo '<td>&nbsp;</td>';
 	echo '</tr>';
 	
+	$total = $json_arr['backtest_summary'][0]['total_trades'];
+	$wins = $json_arr['backtest_summary'][0]['wins'];
+	$losses = $json_arr['backtest_summary'][0]['losses'];
+	
+	$win_percent = ($wins / 100) * $total;
+	$loss_percent = ($losses / 100) * $total;
+	
 	echo "<tr>";
 	echo "<th>Total trades</th>";
 	echo "<th>Wins</th>";
@@ -63,8 +70,8 @@ if (file_exists($summary_fileName)) {
 	echo "</tr>";
 	echo "<tr>";
 	echo "<td>" . $json_arr['backtest_summary'][0]['total_trades'];
-	echo "<td>" . $json_arr['backtest_summary'][0]['wins'];
-	echo "<td>" . $json_arr['backtest_summary'][0]['losses'];
+	echo "<td>" . $json_arr['backtest_summary'][0]['wins'] . "(" . $win_percent . "%)";
+	echo "<td>" . $json_arr['backtest_summary'][0]['losses'] . "(" . $loss_percent . "%)";
 	echo "</tr>";
 	echo "</table>";
 }
