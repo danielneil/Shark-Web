@@ -92,7 +92,7 @@ else
 ?>
 
 <h2>Trades Summary</h2>
-	
+<hr />
 <pre><code>
 <div style='font-weight: bold'>All Trades</div>
 <hr />
