@@ -261,7 +261,7 @@ if (file_exists($dataFrameInfo_fileName)) {
 	echo "<tr>";
 
 	echo "<th>Bar Count</th>";
-	echo "<th>Frequency Daily</th>";
+	echo "<th>Frequency</th>";
 	echo "<th>Start Date</th>";
 	echo "<th>End Date</th>";
 	echo "<th>Provider</th>";
