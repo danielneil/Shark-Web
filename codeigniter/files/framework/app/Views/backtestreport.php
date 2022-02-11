@@ -29,10 +29,12 @@ if (file_exists($summary_fileName)) {
 	echo "<tr>";
 	echo "<th>Final portfolio value</th>";
 	echo "<th>Cumulative returns</th>";
+	echo "<th>Starting capital</th>";
 	echo "</tr>";
 	echo "<tr>";
 	echo "<td>$" . $json_arr['backtest_summary'][0]['final_portfolio_value'];
 	echo "<td>" . $json_arr['backtest_summary'][0]['cumulative_returns'] . "%";
+	echo "<td>$" . $json_arr['backtest_summary'][0]['starting_capital'];
 	echo "</tr>";
 
 	echo '<tr>';
