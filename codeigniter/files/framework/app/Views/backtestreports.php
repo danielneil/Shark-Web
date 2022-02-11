@@ -10,7 +10,7 @@
 	<p>Reports which are still being processed will not appear below until their backtest computation is complete.</p>
 
 <pre><code>
-<div style='font-weight: bold'>Portfolio Summary</div> 
+<div style='font-weight: bold'>Backtest Reports (per instrument)</div> 
 <?php 
 
 	$report_dir = '/shark/reports';
@@ -18,20 +18,25 @@
         $files = scandir($report_dir);
 
         if ( count($files)-2) {
-
-		echo "<div style='font-weight: bold'>Instrument Report</div>" . PHP_EOL ;
+		
+		$a = array();
 		
 		foreach (scandir($report_dir) as $f)
 		{
-			$fileName = $report_dir . '/'. $f;
-
 			if ($f !== '.' and $f !== '..')
 			{
-				$files = explode(".", $fileName);			
+				$files = explode(".", $f);			
 				$ticker = $files[0];
 				
-				echo "<a href=/framework/public/index.php/BacktestReport?ticker=" . $ticker . ">" . $ticker . "</a>"  . PHP_EOL ;
+				aarray_push($a, $ticker");
 			}
+		}
+		
+		$result = array_unique($a);
+		
+		foreach ($result as $ticker)
+		{
+			echo "<a href=/framework/public/index.php/BacktestReport?ticker=" . $ticker . ">" . $ticker . "</a>"  . PHP_EOL ;
 		}
 	}
 	else 
