@@ -135,10 +135,6 @@ if (file_exists($totalTrades_fileName)) {
 	echo "<td>" . $json_arr['total_trades'][0]['max_return'];
 	echo "<td>" . $json_arr['total_trades'][0]['min_return'];
 	echo "</tr>";
-	echo '<tr>';
-    	echo '<td>&nbsp;</td>';
-	echo '</tr>';
-	echo "<tr>";
 	echo "</table>";
 }
 else
@@ -155,20 +151,35 @@ if (file_exists($profitableTrades_fileName)) {
 	
 	$jsonObject = file_get_contents($profitableTrades_fileName);
 	$json_arr = json_decode($jsonObject, true);
-
-	echo "Avg. profit\t\tProfits std. dev.\t\tMax. profit\t\tMin. profit" . PHP_EOL;
 	
-	echo $json_arr['profitable_trades'][0]['avg_profit'] . "\t\t";
-	echo $json_arr['profitable_trades'][0]['profits_std_dev'] . "\t\t";
-	echo $json_arr['profitable_trades'][0]['max_profit'] .  "\t\t";
-	echo $json_arr['profitable_trades'][0]['min_profit'] . "\n\n";
+	echo "<table style='text-align: left; width: 100%'>";
+	echo "<tr>";
 
-	echo "Avg. return\t\tReturns std. dev.\t\tMax. return\t\tMin. return" . PHP_EOL;
-		
-	echo $json_arr['profitable_trades'][0]['avg_return'] . "%\t\t";
-	echo $json_arr['profitable_trades'][0]['returns_std_dev'] . "%\t\t";
-	echo $json_arr['profitable_trades'][0]['max_return'] .  "%\t\t";
-	echo $json_arr['profitable_trades'][0]['min_return'] . "%" . "\n\n";
+	echo "<th>Avg. profit</th>";
+	echo "<th>Profits std. dev.</th>";
+	echo "<th>Max. profit</th>";
+	echo "<th>tMin. profit</th>";
+	echo "</tr>";
+	echo "<tr>";
+	echo "<td>$" . $json_arr['profitable_trades'][0]['avg_profit'];
+	echo "<td>$" . $json_arr['profitable_trades'][0]['profits_std_dev'];
+	echo "<td>$" .  $json_arr['profitable_trades'][0]['max_profit'];
+	echo "<td>$" . $json_arr['profitable_trades'][0]['min_profit'];
+	echo "</tr>";
+	echo '<tr>';
+    	echo '<td>&nbsp;</td>';
+	echo '</tr>';
+	echo "<tr>";	
+	echo "<th>Avg. return</th>";
+	echo "<th>Returns std. dev.</th>";
+	echo "<th>Max. return</th>";
+	echo "<th>Min. return</th>";
+	echo "<td>$" . $json_arr['profitable_trades'][0]['avg_return'];
+	echo "<td>$" . $json_arr['profitable_trades'][0]['returns_std_dev'];
+	echo "<td>$" . $json_arr['profitable_trades'][0]['max_return'];
+	echo "<td>$" . $json_arr['profitable_trades'][0]['min_return'] . "%";
+	echo "</tr>";
+	echo "</table>";
 }
 else
 {
