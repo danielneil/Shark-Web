@@ -34,7 +34,7 @@
 
 			if ($f !== '.' and $f !== '..')
 			{
-				echo "<a href=/shark-web/historical/yahoo_finance_data/" . $f . ">" . $f . "</a>\t" . $lastModified . "\t" . filesize($fileName) . ' bytes ' . PHP_EOL ;
+				echo "<a href=/shark-web/historical/yahoo_finance_data/" . $f . ">" . $f . "</a>\t\t" . $lastModified . "\t" . filesize($fileName) . ' bytes ' . PHP_EOL ;
 			}
 		}
 	}
