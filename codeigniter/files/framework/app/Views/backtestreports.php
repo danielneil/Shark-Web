@@ -2,7 +2,7 @@
 	<div class="heroe">
 		<h1>Backtest Reports</h1>
 		<h2>Backtesting results of all configured instruments</h2>
-	</div
+	</div>
 </header>
 <section>
 
