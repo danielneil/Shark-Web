@@ -24,22 +24,28 @@ if (file_exists($summary_fileName)) {
 
 	$json_arr = json_decode($jsonObject, true);
 
-	echo "Final portfolio value\t\tCumulative returns" . PHP_EOL;
+	echo "<table>";
+	echo "<tr>";
+	echo "<th>Final portfolio value</th>";
+	echo "<th>Cumulative returns</th>";
+	echo "</tr>";
+	echo "<tr>";
+	echo "<td>" . $json_arr['backtest_summary'][0]['final_portfolio_value'];
+	echo "<td>" . $json_arr['backtest_summary'][0]['cumulative_returns'];
+	echo "</tr>";
+	echo "<table>";
 	
-	echo $json_arr['backtest_summary'][0]['final_portfolio_value'] . "\t\t\t";
-	echo $json_arr['backtest_summary'][0]['cumulative_returns'] . "\n\n";
+	echo "Sharpe ratio\t\tMax. drawdown\t\tLongest drawdown duration";
+	
+	echo $json_arr['backtest_summary'][0]['sharpe_ratio']; 
+	echo $json_arr['backtest_summary'][0]['max_drawdown'];
+	echo $json_arr['backtest_summary'][0]['longest_drawdown_duration'];
 
-	echo "Sharpe ratio\t\tMax. drawdown\t\tLongest drawdown duration" . PHP_EOL;
+	echo "Total trades\t\tWins\t\tLosses";
 	
-	echo $json_arr['backtest_summary'][0]['sharpe_ratio'] . "\t"; 
-	echo $json_arr['backtest_summary'][0]['max_drawdown'] . "\t\t" ;
-	echo $json_arr['backtest_summary'][0]['longest_drawdown_duration'] . "\n\n";
-
-	echo "Total trades\t\tWins\t\tLosses" . PHP_EOL;
-	
-	echo $json_arr['backtest_summary'][0]['total_trades'] . "\t\t\t";
-	echo $json_arr['backtest_summary'][0]['wins'] . "\t\t";
-	echo $json_arr['backtest_summary'][0]['losses'] . "\n\n";
+	echo $json_arr['backtest_summary'][0]['total_trades'];
+	echo $json_arr['backtest_summary'][0]['wins'];
+	echo $json_arr['backtest_summary'][0]['losses'];
 }
 else
 {
