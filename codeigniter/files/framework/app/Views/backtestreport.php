@@ -248,6 +248,7 @@ else
 	
 <div style='font-weight: bold'>Historical Data</div>
 <hr />
+<pre><code>
 <?php
 $dataFrameInfo_fileName = "/shark/reports/" . $ticker  . ".backtest.dataFrameInfo.json";
 
@@ -280,5 +281,5 @@ else
 }
 ?>
 
-	
+</code></pre>	
 </section>
