@@ -93,7 +93,7 @@ else
 <h2>Trades Summary</h2>
 	
 <pre><code>
-<div style='font-weight: bold'>All Trades Summary</div>
+<div style='font-weight: bold'>All Trades</div>
 <?php
 
 $totalTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.totaltrades.json";
@@ -143,7 +143,7 @@ else
 }
 ?>
 
-<div style='font-weight: bold'>Profitable Trades Summary</div>
+<div style='font-weight: bold'>Profitable Trades</div>
 <?php
 $profitableTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.profitabletrades.json";
 
@@ -191,7 +191,7 @@ else
 }
 ?>
 
-<div style='font-weight: bold'>Unprofitable Trades Summary</div>
+<div style='font-weight: bold'>Unprofitable Trades</div>
 <?php
 
 $unprofitableTrades_fileName = "/shark/reports/" . $ticker  . ".backtest.unprofitabletrades.json";
