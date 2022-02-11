@@ -245,4 +245,40 @@ else
 ?>
 
 </code></pre>
+	
+<div style='font-weight: bold'>Historical Data</div>
+<hr />
+<?php
+$dataFrameInfo_fileName = "/shark/reports/" . $ticker  . ".backtest.dataFrameInfo.json";
+
+if (file_exists($dataFrameInfo_fileName)) {
+
+	$jsonObject = file_get_contents($dataFrameInfo_fileName);
+	$json_arr = json_decode($jsonObject, true);
+	
+	echo "<table style='text-align: left; width: 100%'>";
+	echo "<tr>";
+
+	echo "<th>Bar Count</th>";
+	echo "<th>Frequency Daily</th>";
+	echo "<th>Start Date</th>";
+	echo "<th>End Date</th>";
+	echo "<th>Provider</th>";
+	echo "</tr>";
+	echo "<tr>";	
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['rows'];
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['frequency'];	
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['start_date'];
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['end_date'];
+	echo "<td>$" . $json_arr['unprofitable_trades'][0]['provider'];
+	echo "</tr>";
+	echo "</table>";
+}
+else
+{
+        echo "Datafile " . $dataFrameInfo_fileName . " not found...";
+}
+?>
+
+	
 </section>
