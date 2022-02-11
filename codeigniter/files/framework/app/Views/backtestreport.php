@@ -64,6 +64,7 @@ if (file_exists($summary_fileName)) {
 	echo "<td>" . $json_arr['backtest_summary'][0]['losses'];
 	echo "</tr>";
 	echo "</table>";
+	echo "<br />";
 }
 else
 {
