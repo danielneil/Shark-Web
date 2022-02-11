@@ -40,7 +40,8 @@ Number of data files:		<?php echo exec("find /shark/historical/yahoo_finance_dat
 </code></pre>
 
 <h1>Configuration File Parser Log</h1>
-
+<p>This is the log file for the YAML configuration parser, and details the conversion process from the YAML code into Shark's native configuration language, along with any 
+errors encountered.</p>
 <pre><code>	
 
 <?php
