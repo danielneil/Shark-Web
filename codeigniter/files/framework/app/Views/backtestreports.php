@@ -25,7 +25,7 @@
 		{
 			$fileName = $history_dir . '/'. $f;
 			
-			$files = explode(" ", $fileName);
+			$files = explode(".", $fileName);
 			
 			$ticker = $files[0];
 
