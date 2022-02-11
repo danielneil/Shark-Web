@@ -30,7 +30,7 @@ if (file_exists($summary_fileName)) {
 	echo "<th>Cumulative returns</th>";
 	echo "</tr>";
 	echo "<tr>";
-	echo "<td>" . $json_arr['backtest_summary'][0]['final_portfolio_value'];
+	echo "<td>$" . $json_arr['backtest_summary'][0]['final_portfolio_value'];
 	echo "<td>" . $json_arr['backtest_summary'][0]['cumulative_returns'];
 	echo "</tr>";
 
@@ -115,10 +115,10 @@ if (file_exists($totalTrades_fileName)) {
 	echo "<th>Min. profit</th>";
 	echo "</tr>";
 	echo "<tr>";
-	echo "<td>" . $json_arr['total_trades'][0]['avg_profit'];
-	echo "<td>" . $json_arr['total_trades'][0]['profits_std_dev'];
-	echo "<td>" . $json_arr['total_trades'][0]['max_profit'];
-	echo "<td>" . $json_arr['total_trades'][0]['min_profit'];
+	echo "<td>$" . $json_arr['total_trades'][0]['avg_profit'];
+	echo "<td>$" . $json_arr['total_trades'][0]['profits_std_dev'];
+	echo "<td>$" . $json_arr['total_trades'][0]['max_profit'];
+	echo "<td>$" . $json_arr['total_trades'][0]['min_profit'];
 	echo "</tr>";
 	echo '<tr>';
     	echo '<td>&nbsp;</td>';
