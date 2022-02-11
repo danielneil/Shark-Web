@@ -95,7 +95,7 @@ if (file_exists($totalTrades_fileName)) {
 }
 else
 {
-        echo "Datafile " . $totalTrades_fileName . " not found...";
+        echo "Datafile " . $totalTrades_fileName . " not found...\n";
 }
 ?>
 
@@ -124,7 +124,7 @@ if (file_exists($profitableTrades_fileName)) {
 }
 else
 {
-        echo "Datafile " . $profitableTrades_fileName . " not found...";
+        echo "Datafile " . $profitableTrades_fileName . " not found...\n";
 }
 ?>
 
@@ -155,7 +155,7 @@ if (file_exists($unprofitableTrades_fileName)) {
 }
 else
 {
-        echo "Datafile " . $unprofitableTrades_fileName . " not found...";
+        echo "Datafile " . $unprofitableTrades_fileName . " not found...\n";
 }
 ?>
 
