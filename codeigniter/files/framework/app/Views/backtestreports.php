@@ -21,9 +21,9 @@
 
 		echo "<div style='font-weight: bold'>Instrument Report</div>" . PHP_EOL ;
 		
-		foreach (scandir($history_dir) as $f)
+		foreach (scandir($report_dir) as $f)
 		{
-			$fileName = $history_dir . '/'. $f;
+			$fileName = $report_dir . '/'. $f;
 
 			if ($f !== '.' and $f !== '..')
 			{
