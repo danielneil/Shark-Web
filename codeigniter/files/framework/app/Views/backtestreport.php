@@ -246,7 +246,7 @@ else
 
 </code></pre>
 	
-<div style='font-weight: bold'>Historical Datafile Information</div>
+<h2>Historical Datafile Information</h2>
 <hr />
 <pre><code>
 <?php
