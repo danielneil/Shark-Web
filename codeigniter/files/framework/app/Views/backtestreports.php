@@ -15,7 +15,7 @@
 
 	$report_dir = '/shark/report';
 
-        $files = scandir($history_dir);
+        $files = scandir($report_dir);
 
         if ( count($files)-2) {
 
