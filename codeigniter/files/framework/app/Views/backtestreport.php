@@ -34,6 +34,10 @@ if (file_exists($summary_fileName)) {
 	echo "<td>" . $json_arr['backtest_summary'][0]['cumulative_returns'];
 	echo "</tr>";
 
+	echo '<tr>';
+    	echo '<td></td>';
+	echo '</tr>';
+	
 	echo "<tr>";
 	echo "<th>Sharpe ratio</th>";
 	echo "<th>Max. drawdown</th>";
