@@ -64,7 +64,6 @@ if (file_exists($summary_fileName)) {
 	echo "<td>" . $json_arr['backtest_summary'][0]['losses'];
 	echo "</tr>";
 	echo "</table>";
-	echo "<br />";
 }
 else
 {
@@ -106,8 +105,6 @@ if (file_exists($totalTrades_fileName)) {
 	$json_arr = json_decode($jsonObject, true);
 	
 	
-	
-	
 	echo "<table style='text-align: left; width: 100%'>";
 	echo "<tr>";
 	echo "<th>Avg. profit</th>";
@@ -137,6 +134,8 @@ if (file_exists($totalTrades_fileName)) {
 	echo "<td>" . $json_arr['total_trades'][0]['min_return'];
 	echo "</tr>";
 	echo "</table>";
+	
+	echo "<br />";
 }
 else
 {
@@ -183,6 +182,8 @@ if (file_exists($profitableTrades_fileName)) {
 	echo "<td>$" . $json_arr['profitable_trades'][0]['min_return'] . "%";
 	echo "</tr>";
 	echo "</table>";
+	
+	echo "<br />";
 }
 else
 {
@@ -213,7 +214,8 @@ if (file_exists($unprofitableTrades_fileName)) {
 	echo "$" . $json_arr['unprofitable_trades'][0]['returns_std_dev'] . "%\t\t";
 	echo "$" . $json_arr['unprofitable_trades'][0]['max_return'] .  "%\t\t";
 	echo "$" . $json_arr['unprofitable_trades'][0]['min_return'] . "%" . "\n\n";
-
+	
+	echo "<br />";
 }
 else
 {
