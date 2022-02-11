@@ -13,7 +13,7 @@
 
 <h1>Index of historical data file cache</h1>
 
-<p>Files will appear here as they are cached by the yahoo_finance plugin.</p>
+<p>Files will appear here as they are cached by Shark.</p>
 	
 <pre><code>
 
@@ -26,6 +26,7 @@
         if ( count($files)-2) {
 
 		echo "<div style='font-weight: bold'>Creation Date\t\t\tSize\t\tFile Name</div>" . PHP_EOL ;
+		echo "<div style='font-weight: bold'>File Name\t\tCreation Date\t\t\tSize</div>" . PHP_EOL ;
 		foreach (scandir($history_dir) as $f)
 		{
 			$fileName = $history_dir . '/'. $f;
@@ -33,7 +34,7 @@
 
 			if ($f !== '.' and $f !== '..')
 			{
-				echo $lastModified . "\t" . filesize($fileName) . ' bytes ' . "\t<a href=/shark-web/historical/yahoo_finance_data/" . $f . ">" . $f . "</a>"  . PHP_EOL ;
+				echo "<a href=/shark-web/historical/yahoo_finance_data/" . $f . ">" . $f . "</a>\t" . $lastModified . "\t" . filesize($fileName) . ' bytes ' . PHP_EOL ;
 			}
 		}
 	}
