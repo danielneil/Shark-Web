@@ -33,7 +33,7 @@ if (file_exists($summary_fileName)) {
 	echo "<td>" . $json_arr['backtest_summary'][0]['final_portfolio_value'];
 	echo "<td>" . $json_arr['backtest_summary'][0]['cumulative_returns'];
 	echo "</tr>";
-	echo "<table>";
+	echo "</table>";
 
 	echo "<table>";
 	echo "<tr>";
@@ -46,7 +46,7 @@ if (file_exists($summary_fileName)) {
 	echo "<td>" . $json_arr['backtest_summary'][0]['max_drawdown'];
 	echo "<td>" . $json_arr['backtest_summary'][0]['longest_drawdown_duration'];
 	echo "</tr>";
-	echo "<table>";
+	echo "</table>";
 
 	echo "<table>";
 	echo "<tr>";
@@ -59,7 +59,7 @@ if (file_exists($summary_fileName)) {
 	echo "<td>" . $json_arr['backtest_summary'][0]['wins'];
 	echo "<td>" . $json_arr['backtest_summary'][0]['losses'];
 	echo "</tr>";
-	echo "<table>";
+	echo "</table>";
 }
 else
 {
