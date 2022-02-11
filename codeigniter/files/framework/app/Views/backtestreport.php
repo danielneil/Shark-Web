@@ -34,8 +34,6 @@ if (file_exists($summary_fileName)) {
 	echo "<td>" . $json_arr['backtest_summary'][0]['cumulative_returns'];
 	echo "</tr>";
 
-	echo "<br />";
-	
 	echo "<tr>";
 	echo "<th>Sharpe ratio</th>";
 	echo "<th>Max. drawdown</th>";
@@ -47,8 +45,6 @@ if (file_exists($summary_fileName)) {
 	echo "<td>" . $json_arr['backtest_summary'][0]['longest_drawdown_duration'];
 	echo "</tr>";
 
-	echo "<br />";
-	
 	echo "<tr>";
 	echo "<th>Total trades</th>";
 	echo "<th>Wins</th>";
