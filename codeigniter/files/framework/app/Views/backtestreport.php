@@ -26,18 +26,18 @@ if (file_exists($summary_fileName)) {
 
 	echo "Final portfolio value\t\tCumulative returns" . PHP_EOL;
 	
-	echo $json_arr['backtest_summary'][0]['final_portfolio_value'] . "\t\t";
+	echo $json_arr['backtest_summary'][0]['final_portfolio_value'] . "\t\t\t";
 	echo $json_arr['backtest_summary'][0]['cumulative_returns'] . "\n\n";
 
 	echo "Sharpe ratio\t\tMax. drawdown\t\tLongest drawdown duration" . PHP_EOL;
 	
-	echo $json_arr['backtest_summary'][0]['sharpe_ratio'] . "\t\t"; 
+	echo $json_arr['backtest_summary'][0]['sharpe_ratio'] . "\t"; 
 	echo $json_arr['backtest_summary'][0]['max_drawdown'] . "\t\t" ;
 	echo $json_arr['backtest_summary'][0]['longest_drawdown_duration'] . "\n\n";
 
 	echo "Total trades\t\tWins\t\tLosses" . PHP_EOL;
 	
-	echo $json_arr['backtest_summary'][0]['total_trades'] . "\t\t";
+	echo $json_arr['backtest_summary'][0]['total_trades'] . "\t\t\t";
 	echo $json_arr['backtest_summary'][0]['wins'] . "\t\t";
 	echo $json_arr['backtest_summary'][0]['losses'] . "\n\n";
 }
