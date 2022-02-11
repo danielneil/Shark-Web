@@ -35,6 +35,8 @@ if (file_exists($summary_fileName)) {
 	echo "</tr>";
 	echo "</table>";
 
+	echo "<br />";
+	
 	echo "<table>";
 	echo "<tr>";
 	echo "<th>Sharpe ratio</th>";
